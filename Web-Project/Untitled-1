@@ -1,0 +1,30 @@
+        
+   /* it('check on label', function() {
+    browser.get('http://www.way2automation.com/angularjs-protractor/registeration/#/login');
+    
+    element(by.id('formly_7_input_username_0')).sendKeys('angular');
+    expect(element(by.id('formly_7_input_username_0')).getAttribute('value'))
+      .toBe('angular');
+
+    
+  });*/
+  
+  /*   it('check on label', function() {
+    browser.get('http://www.way2automation.com/angularjs-protractor/registeration/#/login');
+    
+    var button = element(by.css('[ng-click="login()"]'));
+            button.click().then(function (){
+            browser.waitForAngular();
+            expect(browser.driver.get('http://www.way2automation.com/angularjs-protractor/registeration/#/'));
+            //expect(authenticationError.toBe(true));
+        }, 10000);
+    });
+    */
+  
+    it('Exampe of to method', () => {
+    browser.get('http://www.way2automation.com/angularjs-protractor/registeration/#/login'')
+    .then(()=>(browser.sleep(5000))) //Sleep is added to pause the execution for sometime
+    .then(()=>(browser.navigate().to("'http://www.way2automation.com/angularjs-protractor/registeration/#/"))) // to() method is used here
+    .then(()=>(browser.sleep(5000)));
+   });
+    
